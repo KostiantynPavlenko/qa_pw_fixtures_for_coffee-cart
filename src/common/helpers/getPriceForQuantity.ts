@@ -3,9 +3,9 @@ export function priceFormatStr(unitPrice: number): string {
 }
 
 export function unitPriceFormatStr(unitPrice: number, unitsNumber: number = 1): string {
-  return `$${unitPrice}.00 x ${unitsNumber}`
+  return `${unitPrice}.00 x ${unitsNumber}`
 }
 
-export function totalPriceFormatStr(unitPrice: number, unitsNumber: number = 1): string {
-  return `Total: $${unitPrice * unitsNumber}.00`
+export function totalPriceFormatStr(unitsNumber: number = 1): string {
+  return `Total: $${unitsNumber}.00`
 }
